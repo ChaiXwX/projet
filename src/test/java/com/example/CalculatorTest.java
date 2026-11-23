@@ -40,4 +40,10 @@ public class CalculatorTest {
         assertThrows(ArithmeticException.class,
                 () -> calculator.division(5, 0));
     }
+    @Test
+    void testNouvelleFonction() {
+    // Test d'une opération simple
+    assertEquals(10, calculator.multiplication(2, 5));
+    assertEquals(-10, calculator.multiplication(2, -5));
+    }
 }
